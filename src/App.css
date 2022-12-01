@@ -1,0 +1,545 @@
+
+body {
+    margin: 20px;
+    background-color: #FFECCC;
+    background-image: url("./images/background.png");
+    padding: 0;
+    margin: 0;
+  }
+  
+  .wrapper {
+      display: grid;
+      height: 100%;
+      width: 100%;
+      grid-column-gap: 3px;
+      grid-row-gap: 3px;
+      grid-template-columns: 1px 2fr 300px;
+      grid-template-rows: 100px 1.7fr 70px 4fr 1fr;
+
+    }
+    .test {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+    }
+  
+    .box {
+      color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+  
+    }
+ 
+    nav {
+        grid-column: 2/3;
+        margin: 27px auto 0;
+        position: relative;
+        width: 890px;
+        height: 50px;
+        background-color: #003049;;
+        border-radius: 8px;
+        font-size: 0;
+
+        top: -10px;
+    }
+
+nav a {
+        line-height: 50px;
+        padding-left: 75px;
+        font-size: 15px;
+        position: relative;
+        z-index: 1;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        cursor: pointer;
+}
+
+nav a:hover {
+  color: #E39E21;
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+    text-decoration-color: #E39E21;
+  transition: 0.5s ease-in-out;
+}
+
+
+.currentPage a{
+  color: #E39E21;
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  text-decoration-color: #E39E21;
+}
+
+    .b {
+        grid-column: 3;
+        grid-row: 1;
+        background-color: #003049;
+        height: 40px;
+        top: 10px;
+        left: -2.3%;
+        color: white;
+        padding: 22px;
+        position: relative;
+        display: grid;
+        grid-column-gap: 3px;
+        grid-row-gap: 3px;
+        grid-template-columns: 1fr 1fr 0.4fr 0.4fr;
+        grid-template-rows: 1fr 0.3fr;
+      }
+
+
+
+        .profilePic{
+            grid-column: 1;
+            width: 15px;
+            height: 10px;
+        }
+
+        .profileUsername {
+            grid-column: 2;
+            position: relative;
+            top: 10px;
+            left: -25px;
+        }
+
+        .profileOptions {
+            font-size: 10px;
+            grid-row: 2;
+            grid-column: 3;
+        }
+
+        .profileLogOut {    
+            font-size: 10px;
+            grid-row: 2;
+            grid-column: 4;
+
+        }
+
+    .c {
+        background-color: #E69C24;
+        position: relative;
+        grid-column: 2 / 3;
+        grid-row: 2;
+        width: 75%;
+        height: 80%;
+        top: 8%;
+        left: 9.5%;
+    }
+
+    .c .countingField {
+      width: 10%;
+      height: 20%;
+      background-color: #E69C24;
+      position: absolute;
+      top: -15%;
+      left: 45%;
+      border-radius: 15px;
+    }
+
+
+    .wpmUser {
+        font-size: 15px;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        right: 0;
+    }
+
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .userTextHome {
+        color: black;
+    }
+
+    .countdown{
+        position: absolute;
+        top: 0px;
+        left: 30%;
+        font-size: 40px;
+        color: red;  
+    }
+
+    .countdownduring {
+        color: yellow;
+    }
+    
+
+    .d {
+        grid-column: 2 / 3;
+        grid-row: 3;
+    }
+
+    input {
+        width: 70%;
+        height: 100%;
+        position: relative;
+        left: 12.5%;
+        border-radius: 5px;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        background-color: #FFECCC;
+    }
+
+
+    .e {
+        grid-column: 2 / 3;
+        grid-row: 4;
+        display: grid;
+        grid-column-gap: 3px;
+        position: relative;
+        grid-row-gap: 3px;
+        grid-template-columns: 1fr 5fr 0.5fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        text-align: center;
+        background-color: #E69C24;
+        background-image: url(../src/images/wood.png);
+        background-size: 500px 700px;  
+        background-position-x: -120px;
+        background-position-y: -80px;
+        width: 90%;
+        height: 80%;
+        left: 2.5%;
+        top: 8%;
+    }
+
+    .e .progress hr{
+        position: relative;
+        top: -50%;
+    }
+
+    .e .progress img {
+        position: relative;
+        text-align: left;  
+        top: -20%;
+        object-fit: contain;
+        width: 10%;
+    }
+
+
+    .f {
+
+    }
+    
+    .g {
+        grid-column: 3;
+        grid-row: 2 / 5;
+        position: relative;
+        left: -35px;
+        top: -10px;
+    }
+
+    .h { 
+        grid-column: 1 / 4;
+        grid-row: 5;
+        background-color: #8B7356;
+        height: 300%;
+    }
+
+
+    /**RANKED**/
+    
+    body {
+      height: 100vh;
+    }
+    .ranked-container {
+      display: grid;
+      grid-column-gap: 3px;
+      grid-row-gap: 3px;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 2fr 70px 2fr;
+    }
+
+    .AA {
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    .BB {
+      outline: 2px;
+      outline-style: solid;
+      outline-color: black;
+
+      grid-row: 1;
+      grid-column: 2;
+        background-color: #003049;
+        height: 40px;
+        left: 100px;
+        top: 20px;
+        width: 50%;
+        color: white;
+        padding: 22px;
+        position: relative;
+        display: grid;
+        grid-column-gap: 3px;
+        grid-row-gap: 3px;
+        grid-template-columns: 1fr 1fr 0.4fr 0.4fr;
+        grid-template-rows: 1fr 0.3fr;
+    }
+  
+    .CC {
+      grid-row: 2;
+      grid-column: 1;
+    }
+
+        .rankedtyperacer {
+          outline: 1px;
+          outline-style: solid;
+          outline-color: black;
+
+
+          position: relative;
+          left: 15%;
+          width: 70%;
+          height: 90%;
+          background-color: #E39E21;
+          color: white;
+    }
+
+
+        .rankedUserText {
+          color: #003049;
+        }
+
+    .DD {
+      grid-row: 2/4;
+      grid-column: 2;
+    }
+
+        .opponentProfile {
+          outline: 1px;
+          outline-style: solid;
+          outline-color: black;
+
+
+          position: relative;
+          width: 65%;
+          height: 80%;
+          background-color: #E39E21;
+          top: 7.5%;
+          left: 15%;
+
+          display: grid;
+          text-align: center;
+          grid-template-columns: 0.8fr 1.2fr;
+          grid-template-rows: 1fr 1fr 1fr 1.5fr 0.5fr;
+        }
+    
+        .opponentProfile .picture {
+          grid-row: 1/4;
+          grid-column: 1;
+          margin: 1.9px;
+        }
+
+        .opponentProfile .picture img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .opponentProfile .rank {
+          grid-row: 4;
+          grid-column: 1;
+          width: 90%;
+          height: 90%;
+
+          position: relative;
+          left: 5%;
+        }
+
+        .opponentProfile .rank img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .opponentProfile .username {
+          grid-row: 1/4;
+          text-align: center;
+          position: relative;
+          top: 10%;
+          line-height: 1.6;
+          grid-column: 2;
+        }
+
+        .opponentProfile .joinedOn {
+          font-size: small;
+          grid-row: 5;
+          grid-column: 2;
+          position: absolute;
+          bottom: 2px;
+          right: 20px; 
+        }
+
+        
+        .EE {
+          grid-row: 3;
+          grid-column: 1;
+        }
+
+          .userText {
+            position: relative;
+            left: 17.5%;
+            top: -100%;
+            width: 65%;
+            height: 100%;
+        }
+
+          .userText input {
+            outline: 2px;
+            outline-style: solid;
+            outline-color: black;
+
+
+            border-radius:6px;
+            background-color: #003049;
+            color: white;
+          }
+        
+
+    .FF { 
+      grid-row: 4;
+      grid-column: 1;
+    }
+
+      .race-tracker {
+        outline: 2px;
+        outline-style: solid;
+        outline-color: black;
+
+
+        position: relative;
+        left: 5%;
+
+        width: 90%;
+        height: 100%;
+        background-color: #003049;
+
+        display: grid;
+        grid-template-columns: 0.5fr 3fr 0.2fr;
+        grid-template-rows: 1fr 1fr;
+
+        text-align: center;
+        font-size: 19px;
+      }
+
+          .race-tracker .username1{
+            grid-row: 1;
+            grid-column: 1;
+
+            margin-top: 30%;
+          }
+          
+          .race-tracker .progress1{
+            grid-row: 1;
+            grid-column: 2;
+            
+            position: relative;
+            top: -20px;
+            left: 5px;
+          }
+
+          .race-tracker .progress1 img{
+            position: relative;
+            top: 20px;
+          }
+
+          .race-tracker .finishedText1{
+            grid-row: 1;
+            grid-column: 3;
+
+            position: relative;
+            top: 48%;
+            text-align: left;
+            left: 11px;
+          }
+
+          
+          .race-tracker .username2{
+            grid-row: 2;
+            grid-column: 1;
+
+            margin-top: 30%;
+          }
+          
+          .race-tracker .progress2{
+            grid-row: 2;
+            grid-column: 2;
+            
+            position: relative;
+            top: -20px;
+            left: 5px;
+          }
+
+          .race-tracker .progress2 img{
+            position: relative;
+            top: 20px;
+          }
+
+          .race-tracker .finishedText2{
+            grid-row: 2;
+            grid-column: 3;
+
+            position: relative;
+            top: 48%;
+            text-align: left;
+            left: 11px;
+          }
+
+          .GG {
+            grid-row: 4;
+            grid-column: 2;
+          }
+
+              .stats {
+                outline: 2px;
+                outline-style: solid;
+                outline-color: black;
+
+                width: 90%;
+                height: 70%;
+                background-color: #E39E21;
+
+                position: relative;
+                top: 35px;
+
+                display: grid;
+                grid-template-columns: 1fr 0.5fr 1fr;
+                grid-template-rows: 1fr 3fr;
+
+                color: white;
+              }
+
+                  .p1Result, .textStat, .p2Result {
+                    text-align: center;
+                    font-size: 40px;
+                    padding-top: 5px;
+                  }
+
+                  .p1Stats, .p2Stats {
+                    text-align: center;
+                    padding-top: 15px;
+                    font-size: 23px;
+                    line-height: 30px;
+                  }
+
+                  .verticalLine {
+                    height: 100%;
+                    width: 2%;
+                    background-color: black;
+                    
+                    position: relative;
+                    left: 50%;
+                  }
+
+                  
+
+      

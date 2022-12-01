@@ -1,0 +1,24 @@
+.wrapper-login {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.UsernameInp {
+    grid-row: 4;
+}
+
+.PasswordInp{
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.LoginBn {
+    grid-row: 6;
+    position: relative;
+    top: -60px;
+    left: 50%;
+}

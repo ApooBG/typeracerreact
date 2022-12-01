@@ -1,0 +1,252 @@
+
+
+
+.profile-wrapper{
+    display: grid;
+    grid-template-columns: 0.8fr 3fr 1fr;
+    grid-template-rows: 100px 2fr 2fr;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.profile-wrapper .profile-navbar {
+    grid-column: 1/3;
+    position: relative;
+    left: 0%;
+}
+
+.profile-wrapper .b {
+    grid-column: 3/5;
+    width: 85%;
+    position: relative;
+    left: -10%
+}
+
+
+.profile-box-c {
+    grid-column: 2/3;
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    padding: 30px;
+    position: relative;
+    left: -12%;
+    top: 5%;
+}
+
+.profile-box-c .profile-change {
+    background-color: #003049;
+    border-radius: 12px;
+    display: grid;
+
+    height: 60%;
+
+    padding: 12px;
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    left: 50%
+} 
+
+
+.profile-change .picture {
+    grid-row: 1;
+}
+
+.profile-change .rank {
+    grid-row: 2;
+    width: 70%;
+    height: 72%;
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+
+.profile-change img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-change .info {
+    text-align: left;
+    position: relative;
+    left: 5%;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-change button {
+    width: 30%;
+    height: 50%;
+    position: relative;
+    top: 23%;
+    left: 25%;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    align-items: center;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+
+.profile-change button:hover {
+    background-color: rgb(198, 134, 16)
+}
+
+.profile-box-c .profile-stats {
+    background-color: #003049;
+    border-radius: 12px;
+    display: grid;
+
+    height: 60%;
+    width: 70%;
+
+    padding: 12px;
+
+    position: relative;
+    left: 10%;
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.profile-box-z{
+    grid-row: 2/4;
+    grid-column: 1;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+}
+
+.profile-box-z .hideProfile, .profile-box-z .showProfile {
+    height: 30%;
+    width: 10%;
+    position: relative;
+    top: 27%;
+    left: -4%;
+}
+
+.hideProfile button, .showProfile button {
+    width: 100%;
+    height: 100%;
+    background-color: #003049;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 30px;
+}
+
+
+.hideProfile button a, .showProfile button a{
+    position: relative;
+    left: 20%;
+    color: orange;
+
+    font-weight: 1000;
+}
+
+.hideProfile button:hover, .showProfile button:hover{
+    background-color: #012539;
+}
+
+.hideProfile button:hover a, .showProfile button:hover a{
+    color: white;
+}
+
+.profile-box-z-show{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #003049;
+    grid-row: 2/5;
+    grid-column: 1;
+    width: 80%;
+    height: 90%;
+
+    border-radius: 8px;
+    z-index: 99;
+
+}
+
+.profile-box-z-show button {
+    position: absolute;
+    width: 12%;
+    left: 100%;
+    height: 28%;
+    top: 33%;
+    background-color: #012539;
+    border-radius: 6px;
+    
+}
+
+.profile-box-z-show button a {
+    position: relative;
+    left: -20%;
+}
+
+.profile-box-d {
+    grid-column: 1/3;
+    grid-row: 3;
+    padding: 30px;
+    position: relative;
+    left: 5%;
+}
+
+.profile-box-e {
+    grid-column: 3/5;
+    grid-row: 2/4;
+
+    padding: 30px;
+    position: relative;
+    left: 2%;
+}
+
+.profile-box-d .Customize {
+    width: 65%;
+    height: 84%;
+    background-color: #003049;
+    border-radius: 10px;
+
+    position: relative;
+    left: 13%;
+    top: -15%;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
+.profile-box-d .Customize img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.profile-box-d .Customize div {
+    border: 1px solid orange;
+}
+
+.profile-box-d .Customize div:hover{
+    border: 1px solid green;
+}
+
+
+.profile-box-e {
+    grid-column: 3;
+    position: relative;
+    left: -20%;
+}

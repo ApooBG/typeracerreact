@@ -1,0 +1,229 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.look-ranked-container {
+  display: grid;
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: 100px 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.AA2 {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.BB2 {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: #003049;
+  height: 40px;
+  top: 10px;
+  color: white;
+  padding: 22px;
+  position: relative;
+  display: grid;
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+  grid-template-columns: 1fr 1fr 0.4fr 0.4fr;
+  grid-template-rows: 1fr 0.3fr;
+}
+
+.CC2 {
+  grid-row: 2/4;
+  grid-column: 1;
+  background-color: #003049;
+  padding: 4px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.CC2 .left {
+  text-align: left;
+}
+
+.CC2 .right {
+  text-align: right;
+}
+
+.CC2 .line {
+  width: 100%;
+  height: 0.2%;
+  background-color: white;
+}
+
+
+.CC2 .LastGame {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: darkorange;
+  padding: 3px;
+  border-radius: 6px;
+}
+
+
+
+.DD2 {
+  grid-row: 2;
+  grid-column: 2;
+  position: relative;
+}
+
+.search-box {
+  position: relative;
+  top: 25%;
+  left: 25%;
+  border-radius: 25px;  
+  background-color: #003049;
+  width: 55%;
+  height: 55%;
+  padding-top: 10px;
+  display: grid;
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+  grid-template-rows: 1fr 2fr 1fr 1fr;
+  text-align: center;
+}
+
+.find-match, .searching-match{
+  grid-row: 2;
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.searching-match {
+  background-color: red; /* Green */
+}
+
+.search-box .button .find-match:hover{
+  background-color: orange;
+}
+
+.search-box .estimated-time{
+  text-align: center;
+}
+
+.EE2 {
+  grid-row: 2;
+  grid-column: 3;
+  background-color: #003049;
+  height: 30%;
+  width: 70%;
+  position: relative;
+  top: 23.5%;
+  left: 7.5%;
+}
+
+.EE2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.5fr
+}
+
+.EE2 .rank {
+  grid-row: 2/3;
+  grid-column: 1;
+  width: 90%;
+  height: 90%;
+
+  position: relative;
+  left: 5%;
+}
+
+.EE2 .rank img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.EE2 .wins {
+  grid-row: 1;
+  grid-column: 2;
+  text-align: center;
+}
+
+.EE2 .losses {
+  grid-row: 2;
+  grid-column: 2;
+  text-align: center;
+}
+
+.EE2 .lastFive {
+  grid-row: 3;
+  grid-column: 2;
+  text-align: center;
+}
+
+.EE2 .joined {
+  grid-row: 4;
+  grid-column: 2;
+  text-align: center;
+  font-size: 10px;
+}
+
+.FF2 {
+  grid-row: 3;
+  grid-column: 3;
+  font-size: 22px;
+  text-align: center;
+}
+
+
+
+.FF2 .Leaderboard {
+  display: grid;
+  background-color: #003049;
+  width: 120%;
+  position: relative;
+  left: -20%;
+  height: 70%;
+  border-radius: 15px;
+
+  grid-template-columns: 1.3fr 2fr 2fr;
+  grid-template-rows: 1.5fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+
+  padding: 5px;
+}
+
+.FF2 .text {
+  grid-column: 1/4;
+  grid-row: 1;
+  text-align: center;
+}
+
+
+.FF2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.FF2 .Leaderboard .rank {
+  text-align: right;
+  width: 90%;
+  height: 90%;
+  position: relative;
+  left: 30px;
+  top: -5px;
+}
+
+.FF2 .Leaderboard .username{
+  text-align: right;
+}
+

@@ -1,0 +1,76 @@
+.chat {
+    width: 100%;
+    height: 100%;
+    background-color: #003049;
+    
+    display: grid;
+    grid-template-rows: 1fr 5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 10%;
+  }
+  
+  a {
+    color: white;
+    font-size: 40px;
+  }
+  
+  
+.messageBox {
+    border: 1px solid black;
+    border-bottom: 0px;
+}
+
+  .messages {
+    text-align: left;
+    padding-left: 7%;
+    position: relative;
+    border: 1px solid black;
+    border-bottom: 0px;
+    border-top: 0px;
+  }
+  
+  .messages a {
+    font-size: 14px;
+  }
+  
+  .userInput {
+    text-align: center;
+    border: 1px solid black;
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+
+  .userInput input {
+    width: 90%;
+    height: 50%;
+    position: relative;
+    left: 5px;
+  }
+
+  .buttonSend {
+    border: 1px solid black;
+    border-top: 0px;
+    position: relative;
+  }
+
+  .buttonSend button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 60%;
+      position: relative;
+  
+  }
+  
+
+
+
+  
