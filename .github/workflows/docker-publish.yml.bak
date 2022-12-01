@@ -56,8 +56,8 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
-          username: ${{ apoobg }}
-          password: ${{ dckr_pat_6kpTL5okrCyYzayNjFFXTKFVIy0 }}
+          username: apoobg
+          password: dckr_pat_6kpTL5okrCyYzayNjFFXTKFVIy0
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
